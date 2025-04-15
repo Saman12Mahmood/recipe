@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CULN 103: Every Recipe, Every Skill</title>
+    <title>BAKE 151: Every Recipe, Every Skill</title>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -52,6 +52,12 @@
             animation: fadeIn 1.5s ease 0.5s forwards;
             opacity: 0;
         }
+        h3 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 3rem;
+            color: #D4A017;
+            margin-bottom: 1rem;
+        }
         p {
             font-size: 1.5rem;
             color: #5C4033;
@@ -59,22 +65,29 @@
             opacity: 0;
         }
         .recipe-section {
-            padding: 6rem 2rem;
-            min-height: 100vh;
+            padding: 4rem 2rem;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             position: relative;
+        }
+        .topic-heading {
+            font-family: 'Amatic SC', cursive;
+            font-size: 4rem;
+            color: #8B5E3C;
+            margin-bottom: 2rem;
+            text-align: center;
         }
         .recipe-card {
             background: rgba(255, 243, 228, 0.9);
             border-radius: 20px;
-            padding: 3rem;
+            padding: 2rem;
             max-width: 1000px;
             width: 100%;
             display: flex;
             align-items: center;
             box-shadow: 0 15px 30px rgba(92, 64, 51, 0.2);
+            margin-bottom: 2rem;
             position: relative;
             overflow: hidden;
             transition: transform 0.5s ease;
@@ -84,7 +97,7 @@
         }
         .cooking-container {
             width: 40%;
-            height: 300px;
+            height: 250px;
             position: relative;
             margin-right: 2rem;
         }
@@ -108,15 +121,15 @@
         .recipe-content {
             width: 60%;
         }
-        .recipe-content h2 {
+        .recipe-content h3 {
             font-family: 'Amatic SC', cursive;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: #D4A017;
             margin-bottom: 1rem;
         }
         .recipe-content p {
-            font-size: 1.2rem;
-            line-height: 1.6;
+            font-size: 1.1rem;
+            line-height: 1.5;
             animation: none;
             opacity: 1;
         }
@@ -156,11 +169,12 @@
             animation: rise 1s ease forwards;
         }
         @media (max-width: 768px) {
-            .recipe-card { flex-direction: column; padding: 2rem; }
-            .cooking-container, .recipe-content { width: 100%; margin: 0 0 2rem 0; }
+            .recipe-card { flex-direction: column; padding: 1.5rem; }
+            .cooking-container, .recipe-content { width: 100%; margin: 0 0 1.5rem 0; }
             h1 { font-size: 4rem; }
             h2 { font-size: 2rem; }
-            .recipe-content h2 { font-size: 2.5rem; }
+            .recipe-content h3 { font-size: 2rem; }
+            .topic-heading { font-size: 3rem; }
         }
     </style>
 </head>
@@ -169,818 +183,516 @@
 
     <header>
         <div class="header-content">
-            <h1>CULN 103: Every Recipe, Every Skill</h1>
+            <h1>Dessert kitchen management</h1>
             <h2>A Complete Journey Through 12 Topics</h2>
-            <p>Presented by Saman Mahmood, April 07, 2025</p>
+            <p>Presented by Saman Mahmood</p>
         </div>
     </header>
 
-    <!-- Topic 1: Knife Skills and Stocks -->
+    <!-- Topic 1: Pate Sucree and Shortbread -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 1: Pate Sucree and Shortbread</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Chopping Mirepoix"></div>
+                <div class="cooking-animation mix" data-action="Mixing-Pate-Sucree"></div>
             </div>
             <div class="recipe-content">
-                <h2>White Chicken Stock</h2>
-                <p><strong>Procedure:</strong> Simmer 2 kg chicken bones with 3 L water, mirepoix (125 g onion, 65 g celery, 30 g carrot, 30 g mushrooms), sachet (bay leaf, thyme, peppercorns, parsley, garlic, clove) for 3-4 hours, strain.</p>
-                <p><strong>Key Ingredient:</strong> Chicken Bones - Southeast Asia, 6,000 BC - Collagen for richness</p>
-                <p><strong>Future Use:</strong> Chicken noodle soup</p>
-                <p><strong>Learning Outcome:</strong> Mastered knife cuts and skimming.</p>
+                <h3>Pate Sucree</h3>
+                <p><strong>Procedure:</strong> Sift 250 g all-purpose flour, 100 g icing sugar, 2 g salt into a bowl. Cut in 150 g cold, cubed unsalted butter until mixture resembles coarse crumbs. Mix 50 g egg yolks with 20 mL cold water, add to flour mixture, stir until dough forms. Wrap and chill for 1 hour. Roll out to 3 mm thickness, line tart molds, dock base. Blind bake at 350°F (175°C) for 15–20 minutes until golden.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered cutting butter into flour for a tender, flaky crust.<br>2. Learned blind baking to prevent shrinkage and ensure even cooking.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Creaming-Shortbread"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Shortbread</h3>
+                <p><strong>Procedure:</strong> Cream 200 g softened unsalted butter with 100 g granulated sugar until light and fluffy. Sift 250 g all-purpose flour, 50 g cornstarch, 2 g salt together. Gradually add dry ingredients to butter mixture, mixing until just combined. Press dough into a 9-inch square pan or roll and cut into shapes. Chill for 30 minutes. Bake at 325°F (160°C) for 20–25 minutes until lightly golden. Cool slightly before cutting.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Developed creaming skills for smooth shortbread texture.<br>2. Understood cornstarch’s role in melt-in-the-mouth consistency.</p>
             </div>
         </div>
     </section>
 
+    <!-- Topic 2: Pate a Choux -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 2: Pate a Choux</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Roasting Bones"></div>
+                <div class="cooking-animation simmer" data-action="Cooking-Choux"></div>
             </div>
             <div class="recipe-content">
-                <h2>Brown Veal Stock</h2>
-                <p><strong>Procedure:</strong> Roast 2 kg veal bones at 400°F, simmer with 3 L water, mirepoix (125 g onion, 62.5 g carrot, 62.5 g celery), 31.25 g tomato paste, sachet for 6-8 hours, strain.</p>
-                <p><strong>Key Ingredient:</strong> Veal Bones - Europe, Roman times - Gelatin for silkiness</p>
-                <p><strong>Future Use:</strong> Veal demi-glace</p>
-                <p><strong>Learning Outcome:</strong> Learned roasting for depth.</p>
+                <h3>Choux Pastry</h3>
+                <p><strong>Procedure:</strong> Bring 250 mL water, 100 g unsalted butter, 2 g salt to a boil. Remove from heat, add 150 g all-purpose flour all at once, stir vigorously until dough forms. Return to medium heat, stir until dough pulls away from pan sides. Transfer to mixer, cool slightly, add 4 eggs (200 g) one at a time, mixing until smooth and glossy. Pipe into shapes (eclairs, profiteroles). Bake at 400°F (200°C) for 20–25 minutes until golden and hollow.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered cooking choux dough for piping consistency.<br>2. Learned gradual egg incorporation for smooth pastry.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Whisking-Pastry-Cream"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Pastry Cream Filling</h3>
+                <p><strong>Procedure:</strong> Heat 500 mL milk until simmering. Whisk 100 g granulated sugar, 4 egg yolks, 40 g cornstarch until smooth. Temper egg mixture with hot milk, whisking constantly. Return to saucepan, cook over medium heat, stirring until thickened. Remove from heat, stir in 5 mL vanilla extract, 50 g unsalted butter until smooth. Cover with plastic wrap to contact, chill.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Acquired expertise in tempering eggs for lump-free cream.<br>2. Understood cornstarch thickening for stable filling.</p>
             </div>
         </div>
     </section>
 
+    <!-- Topic 3: Sponge Cakes -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 3: Sponge Cakes</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Chopping Leeks"></div>
+                <div class="cooking-animation mix" data-action="Whipping-Genoise"></div>
             </div>
             <div class="recipe-content">
-                <h2>Vegetable Stock</h2>
-                <p><strong>Procedure:</strong> Sweat mirepoix (125 g onion, 62.5 g carrots, 62.5 g celery), 62.5 g leeks, 31.25 g mushrooms, garlic in 11.25 ml oil, simmer with 1 L water and sachet for 45 minutes, strain.</p>
-                <p><strong>Key Ingredient:</strong> Leeks - Mediterranean, ancient Egypt - Sweet balance</p>
-                <p><strong>Future Use:</strong> Leek tart</p>
-                <p><strong>Learning Outcome:</strong> Got sweating veggies.</p>
+                <h3>Genoise Sponge</h3>
+                <p><strong>Procedure:</strong> Whisk 6 eggs and 180 g granulated sugar over a double boiler until warm (40°C/104°F). Whip on high speed until thick, pale, and ribbon-forming. Sift 150 g cake flour over mixture, gently fold in. Fold in 50 g melted unsalted butter, 5 mL vanilla extract. Pour into greased, lined 8-inch round pan. Bake at 350°F (175°C) for 25–30 minutes until springy and golden.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered warm egg method for genoise volume.<br>2. Learned delicate folding to maintain aeration.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Folding-Joconde"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Joconde Sponge</h3>
+                <p><strong>Procedure:</strong> Mix 150 g almond flour, 150 g icing sugar, 4 eggs until smooth and thick. Whip 3 egg whites with 50 g granulated sugar to soft peaks. Fold meringue into almond mixture. Sift 50 g cake flour over mixture, fold gently. Fold in 30 g melted unsalted butter. Spread onto lined half-sheet tray, bake at 400°F (200°C) for 10–12 minutes until golden.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Developed skills in combining almond batter with meringue.<br>2. Understood almond flour’s role in flavor and structure.</p>
             </div>
         </div>
     </section>
 
-    <!-- Topic 2: Sauces -->
+    <!-- Topic 4: Custards and Creams -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 4: Custards and Creams</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Mixing Roux"></div>
+                <div class="cooking-animation simmer" data-action="Tempering-Creme-Brulee"></div>
             </div>
             <div class="recipe-content">
-                <h2>Béchamel & Mornay Sauce</h2>
-                <p><strong>Procedure:</strong> Cook 65 g clarified butter with 65 g flour, add 1 L milk, simmer with bay leaves and clove-studded onion, strain; add 125 g Gruyère, 60 g Parmesan for Mornay.</p>
-                <p><strong>Key Ingredient:</strong> Clarified Butter - India, 1500 BCE - Nutty roux base</p>
-                <p><strong>Future Use:</strong> Shrimp sauté</p>
-                <p><strong>Learning Outcome:</strong> Perfected white roux.</p>
+                <h3>Crème Brûlée</h3>
+                <p><strong>Procedure:</strong> Heat 500 mL 35% cream with 1/2 vanilla bean until simmering, remove from heat. Whisk 5 egg yolks, 100 g granulated sugar until pale. Temper cream into yolk mixture, whisking constantly. Strain mixture, pour into ramekins. Bake in water bath at 300°F (150°C) for 30–35 minutes until set but jiggly. Chill 4 hours. Sprinkle 50 g sugar on top, caramelize with torch.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered tempering for smooth custard base.<br>2. Learned sugar caramelization for crisp topping.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Whisking-Lemon-Curd"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Lemon Curd</h3>
+                <p><strong>Procedure:</strong> Whisk 120 mL lemon juice, 150 g granulated sugar, 4 egg yolks, 2 whole eggs in a saucepan. Cook over medium heat, stirring constantly, until thickened (80°C/175°F). Remove from heat, stir in 100 g unsalted butter, 5 g lemon zest until smooth. Strain, chill, cover with plastic wrap to contact.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Developed precision in cooking curd to avoid curdling.<br>2. Understood butter’s role in glossy, rich texture.</p>
             </div>
         </div>
     </section>
 
+    <!-- Topic 5: Churned Frozen Desserts -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 5: Churned Frozen Desserts</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Simmering Sauce"></div>
+                <div class="cooking-animation simmer" data-action="Churning-Mango-Sorbet"></div>
             </div>
             <div class="recipe-content">
-                <h2>Sauce Espagnole</h2>
-                <p><strong>Procedure:</strong> Sauté mirepoix (125 g onions, 65 g carrots, 65 g celery) in 65 g butter, add 65 g flour for brown roux, mix in 1.5 L veal stock, 65 g tomato paste, sachet, simmer 2 hours, strain.</p>
-                <p><strong>Key Ingredient:</strong> Tomato Paste - Italy, 16th century - Umami depth</p>
-                <p><strong>Future Use:</strong> Tomato braised chicken</p>
-                <p><strong>Learning Outcome:</strong> Built brown sauce.</p>
+                <h3>Mango Sorbet</h3>
+                <p><strong>Procedure:</strong> Blend 90 g granulated sugar with 3 g pectin. Combine sugar/pectin mix, 180 mL water, 60 g glucose in a saucepan, whisk until combined. Bring to a full boil, boil 1 minute. Cool over ice bath. Whisk in 510 g mango puree, 15 g lemon juice. Chill well, freeze in ice cream machine.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Understood pectin’s role in stabilizing sorbet texture.<br>2. Mastered rapid cooling to maintain flavor before churning.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Making-Vanilla-Ice-Cream"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Vanilla Bean Ice Cream</h3>
+                <p><strong>Procedure:</strong> Heat 750 mL milk, 240 mL 35% cream, 1/2 vanilla bean, 300 g granulated sugar until sugar dissolves and mixture is hot. Temper into 150 g egg yolks, whisking constantly. Return to saucepan, cook over low heat, stirring until thickened and coats a spoon (do not boil). Strain, cool over ice bath. Chill thoroughly, freeze in ice cream machine.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Developed proficiency in crème anglaise for creamy ice cream.<br>2. Learned to extract vanilla bean flavor effectively.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Churning-Raspberry-Gelato"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Raspberry Gelato</h3>
+                <p><strong>Procedure:</strong> Heat 125 g granulated sugar, 100 mL milk, 90 mL 18% or 35% cream until sugar dissolves. Cool mixture. Prepare 438 g raspberry puree, strain seeds. Combine milk mixture with puree. Freeze in ice cream machine. Remove, stir in 50 g partially thawed frozen raspberries. Freeze in container.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Acquired skills in balancing dairy and fruit for dense gelato.<br>2. Understood timing of adding fruit for texture and appeal.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Shaping-Tuile"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Ice Cream Cone Tuile</h3>
+                <p><strong>Procedure:</strong> Cream 60 g butter, 120 g sifted icing sugar until smooth. Gradually add 60 g egg whites, mixing fully. Sift 60 g cake flour over mixture, fold gently. Spread thinly on silicone mat using stencil for cone shapes. Bake at 350–375°F (175–190°C) for 5–7 minutes until golden. Shape into cones while hot, cool to harden.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered spreading batter for thin, crisp tuiles.<br>2. Learned to shape hot tuiles quickly for desired forms.</p>
             </div>
         </div>
     </section>
 
+    <!-- Topic 6: Still Frozen Desserts -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 6: Still Frozen Desserts</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Mixing Roux"></div>
+                <div class="cooking-animation mix" data-action="Folding-Dacquoise"></div>
             </div>
             <div class="recipe-content">
-                <h2>Velouté Sauce</h2>
-                <p><strong>Procedure:</strong> Sweat 65 g white mirepoix in 65 g clarified butter, add 65 g flour for blonde roux, mix in 1.25 L white stock, sachet, simmer 1 hour, strain.</p>
-                <p><strong>Key Ingredient:</strong> White Stock - Medieval Europe - Light base</p>
-                <p><strong>Future Use:</strong> Chicken velouté soup</p>
-                <p><strong>Learning Outcome:</strong> Kept it light with blonde roux.</p>
+                <h3>Hazelnut Dacquoise</h3>
+                <p><strong>Procedure:</strong> Blend 360 g ground hazelnuts, 220 g icing sugar in food processor, sift. Whip 350 g egg whites with 90 g granulated sugar, 2 g salt to soft peaks. Fold in hazelnut mixture. Pipe into four 8-inch discs on lined baking sheet. Sprinkle 100 g chopped toasted hazelnuts. Bake at 400°F (200°C) for 10 minutes until golden.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered folding for light, airy dacquoise texture.<br>2. Understood precise baking for pliable result.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Making-Ganache"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Dark Chocolate Ganache Filling</h3>
+                <p><strong>Procedure:</strong> Bring 150 mL 35% cream to a boil. Remove from heat, add 200 g semisweet dark chocolate, stir until melted and smooth. Cool to spreadable consistency. Divide evenly to fill two 8-inch cakes as a layer.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned cream-to-chocolate ratio for spreadable ganache.<br>2. Developed skills in cooling ganache for layering.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Whipping-Parfait"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Lotus Biscoff Pâte à Bombe Parfait</h3>
+                <p><strong>Procedure:</strong> Boil 210 g granulated sugar, 65 g glucose, 120 g water to 116°C (241°F). Whip 10 egg yolks, slowly add hot syrup, whip until doubled. Cool, mix in 325 g Lotus Biscoff spread, 12 g vanilla extract, 4 softened gelatin leaves with paddle. Fold in 1 L whipped 35% cream, 300 g chopped dark chocolate. Assemble in 8-inch molds with two hazelnut dacquoise layers, one ganache layer, top with parfait. Freeze.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Acquired expertise in pâte à bombe for aerated parfait.<br>2. Understood gelatin and cream for stabilizing frozen desserts.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation simmer" data-action="Cooking-Glaze"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Dark Chocolate Glaze</h3>
+                <p><strong>Procedure:</strong> Boil 120 g 35% cream, 180 g granulated sugar, 145 g water. Add 60 g cocoa powder, cook to 102°C (216°F), stirring. Cool to 50°C (122°F). Add 8 g softened gelatin sheets, stir until melted. Use at 35°C (95°F) to coat frozen cakes.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned cooking glaze to precise temperature for gloss.<br>2. Mastered gelatin incorporation for setting on frozen dessert.</p>
             </div>
         </div>
     </section>
 
+    <!-- Topic 7: Frozen Mousse and Soufflé -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 7: Frozen Mousse and Soufflé</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Simmering Tomatoes"></div>
+                <div class="cooking-animation simmer" data-action="Candying-Pineapple"></div>
             </div>
             <div class="recipe-content">
-                <h2>Tomato Sauce</h2>
-                <p><strong>Procedure:</strong> Sweat 60 g onion in 60 ml olive oil, add 2 garlic cloves, 1 L canned tomatoes, simmer 10-15 minutes, finish with 10 basil leaves, bay leaf removed.</p>
-                <p><strong>Key Ingredient:</strong> Basil - India, 4,000 years ago - Fresh lift</p>
-                <p><strong>Future Use:</strong> Basil pesto</p>
-                <p><strong>Learning Outcome:</strong> Balanced fresh sauce.</p>
+                <h3>Candied Pineapple</h3>
+                <p><strong>Procedure:</strong> Cut 1 pineapple in half top-to-bottom. Remove pulp, reserve peel in freezer. Cube pulp. Boil 1000 g sugar, 1000 g water. Add pineapple cubes, simmer until tender and translucent. Remove from syrup, reserve for frozen nougat.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered simmering fruit for candied texture.<br>2. Understood preserving peel for presentation.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation simmer" data-action="Churning-Sherbet"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Pineapple Champagne Sherbet</h3>
+                <p><strong>Procedure:</strong> Puree 1000 g pineapple until smooth. Combine with 500 g sugar, 1000 g champagne, stir until sugar dissolves. Chill thoroughly. Freeze in ice cream machine to soft-serve consistency. Transfer to container, freeze until firm.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned balancing sugar and alcohol for smooth sherbet.<br>2. Developed skills in churning fruit-based desserts.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Mixing-Almond-Sponge"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Almond Sponge</h3>
+                <p><strong>Procedure:</strong> Mix 100 g almond paste, 100 g eggs with paddle until smooth. Add 25 g cake flour, mix well. Incorporate 25 g melted unsalted butter. Whip 100 g egg whites until frothy, add 50 g sugar, whip to stiff peaks. Fold meringue into almond mixture. Spread evenly on half sheet tray. Bake at 400°F (200°C) for 5 minutes until golden.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Acquired proficiency in folding meringue for airy sponge.<br>2. Understood almond paste’s role in flavor and structure.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Whipping-Nougat"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Frozen Nougat</h3>
+                <p><strong>Procedure:</strong> Toast 180 g blanched almonds, 40 g pistachios at 330°F (165°C) for 15 minutes, chop coarsely. Cook 50 g sugar, 30 g water, 110 g honey to 123°C (253°F). Whip 120 g egg whites, slowly add syrup, whip until cool. Chop 60 g candied orange peel, 60 g cherries, 75 g candied pineapple. Fold in 500 mL whipped 35% cream, nuts, fruits, 3 g vanilla extract. Layer with almond sponge in molds, freeze, cut into 1.5" slices.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered hot sugar syrup for stable Italian meringue.<br>2. Developed skills in assembling layered frozen desserts.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Whipping-Meringue"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Italian Meringue</h3>
+                <p><strong>Procedure:</strong> Boil 250 g sugar, 75 g water to 110°C (230°F). Whip 150 g fresh egg whites on high when syrup hits 110°C. At 118°C (244°F), pour syrup slowly into egg whites. Whip until cool. Use to decorate pineapple shells, torch to caramelize, reserve for nougat slices.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned precise sugar syrup temperature for glossy meringue.<br>2. Acquired expertise in piping and torching meringue.</p>
             </div>
         </div>
     </section>
 
-    <!-- Topic 3: Egg Cookery and Breakfast -->
+    <!-- Topic 8: Meringue, Japonaise & Dacquoise -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 8: Meringue, Japonaise & Dacquoise</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Whisking Hollandaise"></div>
+                <div class="cooking-animation mix" data-action="Whipping-Pavlova"></div>
             </div>
             <div class="recipe-content">
-                <h2>Eggs Benedict with Hollandaise</h2>
-                <p><strong>Procedure:</strong> Poach 4 eggs, toast 2 muffins with 45 g butter, top with Canadian bacon, Hollandaise (500 g butter, 5 egg yolks, vinegar reduction, lemon, Tabasco).</p>
-                <p><strong>Key Ingredient:</strong> Eggs - Southeast Asia, 6,000 BC - Rich emulsion</p>
-                <p><strong>Future Use:</strong> Veggie frittata</p>
-                <p><strong>Learning Outcome:</strong> Nailed poaching and Hollandaise.</p>
+                <h3>Pavlova</h3>
+                <p><strong>Procedure:</strong> Whip 200 g egg whites to soft peaks. Gradually add 200 g fine sugar, whipping until no grittiness remains. Fold in 200 g sifted icing sugar. Pipe or spread meringue into shapes on parchment-lined sheets. Bake at 200°F (93°C) for 1.5 hours. Cool in oven 20 minutes to prevent cracking.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered whipping egg whites for stable pavlova meringue.<br>2. Understood low-temperature baking for crisp exterior.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Whisking-Passionfruit-Curd"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Passionfruit Curd</h3>
+                <p><strong>Procedure:</strong> Combine 10 mL lemon juice, 75 g passionfruit puree, 60 g fine sugar in saucepan, bring to boil. Whisk 4 whole eggs, 2 egg yolks, 60 g sugar. Temper hot passionfruit mixture into eggs, whisking. Return to saucepan, cook over medium heat until thickened, stirring. Remove, stir in 170 g unsalted butter, cool. Refrigerate.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned tempering to prevent curdling in curd.<br>2. Developed skills in balancing acidity and sweetness.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Piping-Japonaise"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Japonaise Base</h3>
+                <p><strong>Procedure:</strong> Whip 3 egg whites with 80 g granulated sugar to firm meringue. Combine 55 g ground almonds, 20 g bread flour, 80 g granulated sugar, fold into meringue. Pipe concentric 2-3" circles on flipped parchment paper. Bake at 375°F (190°C) for 10–20 minutes until golden brown.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Acquired expertise in folding nut-flour into meringue.<br>2. Mastered precise piping for uniform japonaise discs.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Whipping-Buttercream"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Chocolate Buttercream</h3>
+                <p><strong>Procedure:</strong> Boil 400 g sugar, 200 g water to 118°C (244°F). Whip 4 whole eggs until frothy, doubled. Slowly pour hot syrup into eggs, whipping. Add 908 g thinly sliced butter incrementally, whip until incorporated. Add 140 g melted caramel or dark chocolate, whip until smooth.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned Italian meringue-based buttercream with hot syrup.<br>2. Understood emulsifying butter and chocolate for spreadable texture.</p>
             </div>
         </div>
     </section>
 
+    <!-- Topic 9: Cheesecake -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 9: Cheesecake</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Chopping Leeks"></div>
+                <div class="cooking-animation mix" data-action="Mixing-Chocolate-Cookie"></div>
             </div>
             <div class="recipe-content">
-                <h2>Goat Cheese & Leek Omelet</h2>
-                <p><strong>Procedure:</strong> Sauté 1 leek in 15 ml oil and 15 g butter, add 4 whisked eggs, cook until set, top with 100 g goat cheese, fold.</p>
-                <p><strong>Key Ingredient:</strong> Goat Cheese - Middle East, 10,000 BC - Tangy creaminess</p>
-                <p><strong>Future Use:</strong> Goat cheese salad</p>
-                <p><strong>Learning Outcome:</strong> Learned omelet folding.</p>
+                <h3>Chocolate Cookie (Crust and Decorations)</h3>
+                <p><strong>Procedure:</strong> Cream 135 g unsalted butter, 245 g brown sugar, 3 g salt, 1 g vanilla extract until fluffy. Add 2 beaten eggs in two additions, mix well. Mix in 250 g melted dark chocolate couverture. Sift 1 g baking soda, 180 g cake flour, 30 g cocoa powder, fold into wet mixture. Pipe into 2-inch rounds on lined tray. Bake at 340°F (171°C) for 18–20 minutes.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered creaming for uniform cookie texture.<br>2. Learned piping dough for consistent shapes.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Pressing-Crust"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Chocolate Cookie Crust</h3>
+                <p><strong>Procedure:</strong> Finely crush 175 g chocolate cookies into crumbs. Mix with 100 g melted unsalted butter until combined. Press evenly into bottom of 6-inch cake pan or ring to form compact crust. Chill in refrigerator to set before adding cheesecake filling.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Understood crumb-to-butter ratio for firm crust.<br>2. Developed skills in pressing crust evenly.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Blending-Cheesecake"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Cheesecake</h3>
+                <p><strong>Procedure:</strong> Blend 500 g full-fat cream cheese, 225 g granulated sugar at low speed until smooth. Add 450 g unsweetened Greek yogurt, 2 whole eggs, 4 egg yolks, blend slowly until incorporated. Pour into 6-inch pan with chilled chocolate cookie crust. Bake at 300°F (149°C) for 45 minutes until set. Cool, chill.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned gentle mixing to prevent cracking.<br>2. Mastered low-temperature baking for smooth texture.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Making-White-Ganache"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>White Chocolate Ganache</h3>
+                <p><strong>Procedure:</strong> Heat 115 g 35% cream, 10 g glucose to boiling, remove from heat. Pour over 225 g chopped white chocolate couverture in a bowl, stir until melted and smooth. Optionally blend for finer consistency. Cool slightly, use as glaze over chilled cheesecake.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Acquired expertise in melting chocolate with cream for glossy ganache.<br>2. Understood glucose’s role in enhancing texture and shine.</p>
             </div>
         </div>
     </section>
 
-    <!-- Topic 4: Soup Production -->
+    <!-- Topic 10: Mousse Cake -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 10: Mousse Cake</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Simmering Soup"></div>
+                <div class="cooking-animation mix" data-action="Whipping-Vanilla-Sponge"></div>
             </div>
             <div class="recipe-content">
-                <h2>Cream of Mushroom Soup</h2>
-                <p><strong>Procedure:</strong> Sweat 250 g mushrooms, 100 g shallots, 50 g garlic in 100 g butter, add 70 g flour roux, 1.125 L stock, purée, finish with 200 ml cream.</p>
-                <p><strong>Key Ingredient:</strong> Mushrooms - Europe/Asia, 17th century - Earthy umami</p>
-                <p><strong>Future Use:</strong> Mushroom risotto</p>
-                <p><strong>Learning Outcome:</strong> Mastered creamy soup.</p>
+                <h3>Vanilla Sponge</h3>
+                <p><strong>Procedure:</strong> Combine 500 g Lentia vanilla cake mix, 375 g room-temperature whole eggs, 150 mL water in mixing bowl. Whisk on low for 1 minute to blend. Whip on third speed for 10–12 minutes until voluminous. Spread evenly on parchment-lined full-size sheet pan. Bake at 375°F (190°C) for 8–12 minutes until golden and springy. Cool, cut into 6-inch discs.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered whipping batter for light sponge.<br>2. Learned spreading batter for uniform baking.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Whipping-Blackcurrant-Mousse"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Blackcurrant Mousse</h3>
+                <p><strong>Procedure:</strong> Warm 225 g blackcurrant puree to 46°C (115°F). Boil 60 g granulated sugar, 30 mL water to 118°C (244°F), pour into whipping 30 g egg whites, whip until cool for Italian meringue. Soften 3 gelatin sheets in cold water, drain, add to puree, stir until dissolved. Fold puree into meringue, then fold in 195 mL softly whipped heavy cream. Layer over sponge in 6-inch molds, chill.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Acquired expertise in Italian meringue for stable mousse.<br>2. Understood gelatin’s role in setting smooth mousse.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Pouring-Glacage"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Fruit Glacage (Blackcurrant)</h3>
+                <p><strong>Procedure:</strong> Soften 5 g gelatin in cold water. Heat 45 g sugar, 30 g water, 15 g glucose until dissolved, remove from heat. Stir in gelatin until melted. Add 75 g blackcurrant puree, mix well. Strain through cheesecloth. Cool to 35°C (95°F), pour over chilled mousse cakes. Top with fresh fruit.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned precise temperature control for glossy glacage.<br>2. Developed skills in straining for mirror-like glaze.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation simmer" data-action="Melting-Isomalt"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Isomalt Decorations</h3>
+                <p><strong>Procedure:</strong> Divide 400 g isomalt into two portions, add desired food coloring to each. Melt each portion separately in saucepan over medium heat until liquid, stirring occasionally. Pour or pipe into bubble molds or freeform shapes on silicone mat. Cool and harden at room temperature. Remove, use to decorate mousse cakes.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered melting isomalt for durable decorations.<br>2. Understood color and shape for visual appeal.</p>
             </div>
         </div>
     </section>
 
+    <!-- Topic 11: Mille Feuille & Gateau St. Honoré -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 11: Mille Feuille & Gateau St. Honoré</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Caramelizing Onions"></div>
+                <div class="cooking-animation mix" data-action="Whisking-Pastry-Cream"></div>
             </div>
             <div class="recipe-content">
-                <h2>French Onion Soup Gratinée</h2>
-                <p><strong>Procedure:</strong> Caramelize 500 g onions in 25 g butter, add 1.3 L beef stock, 35 ml port, simmer, top with baguette and 150 g Gruyère, broil.</p>
-                <p><strong>Key Ingredient:</strong> Onions - Central Asia, 3,000 BC - Sweet depth</p>
-                <p><strong>Future Use:</strong> Onion jam</p>
-                <p><strong>Learning Outcome:</strong> Slow caramelization.</p>
+                <h3>Pastry Cream</h3>
+                <p><strong>Procedure:</strong> Bring 1200 g milk, 300 g 35% cream to scald. Whisk 300 g sugar, 140 g cornstarch, 6 eggs, 25 g vanilla paste until smooth. Temper egg mixture with hot milk mixture, whisking. Return to saucepan, cook over medium heat until thickened. Transfer to tray, cover with plastic wrap to contact, refrigerate.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered tempering for smooth pastry cream.<br>2. Understood cornstarch for thick, stable consistency.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation simmer" data-action="Cooking-Choux-Paste"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Choux Paste</h3>
+                <p><strong>Procedure:</strong> Bring 130 g water, 130 g milk, pinch of salt, 120 g unsalted butter to boil. Add 130 g bread flour all at once, stir quickly over heat until dough forms a ball and pulls from pan sides. Transfer to mixer, cool slightly. Add 104 g eggs (approx. 2) one at a time, mixing until smooth and firm. Pipe for Gateau St. Honoré.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned cooking choux dough for piping consistency.<br>2. Developed skills in gradual egg incorporation.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Whipping-Chantilly"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Creme Chantilly</h3>
+                <p><strong>Procedure:</strong> Combine 250 g 35% whipping cream, 40 g icing sugar, 2 mL vanilla extract in chilled bowl. Whip until stiff peaks form, avoiding overwhipping. Transfer to piping bag with St. Honoré tip for assembly.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered whipping cream to stiff peaks for stability.<br>2. Understood sugar and vanilla balance for flavor.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation simmer" data-action="Cooking-Caramel"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Caramel</h3>
+                <p><strong>Procedure:</strong> Heat 200 g sugar, 60 g water gently until dissolved, then boil. Add 20 g corn syrup or glucose, cook to rich golden color. Plunge pan base into ice water to stop cooking. Dip filled choux puffs into caramel, allow to set.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Learned cooking caramel to correct color and consistency.<br>2. Understood corn syrup’s role in preventing crystallization.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Layering-Mille-Feuille"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Mille Feuille</h3>
+                <p><strong>Procedure:</strong> Dock 3 puff pastry sheets, bake at 400°F (200°C) until golden, cool. Trim edges for uniform size. Spread 700 g pastry cream over one sheet, top with second sheet, spread 700 g more cream, top with third sheet bottom-side-up, press gently. Freeze until set. Warm 500 g soft fondant, mix 80 g with 10 g dark chocolate, pipe lines, marble. Cut into 1.5"x4" pieces, decorate with berries.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Developed precision in layering for uniform structure.<br>2. Mastered glazing with fondant for professional finish.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <div class="cooking-container">
+                <div class="cooking-animation mix" data-action="Piping-Gateau"></div>
+            </div>
+            <div class="recipe-content">
+                <h3>Gateau St. Honoré</h3>
+                <p><strong>Procedure:</strong> Dock 1 puff pastry sheet, cut into six 4.25-inch circles. Pipe choux paste border on each circle, pipe remaining paste into 36 small puffs. Bake at 370°F (188°C) until golden, cool. Pipe pastry cream onto puff pastry circles’ bottoms. Fill choux puffs with pastry cream, dip tops in caramel, place around circles’ edges. Pipe creme chantilly in center with St. Honoré tip.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Acquired skills in combining puff pastry and choux.<br>2. Learned decorative chantilly piping.</p>
             </div>
         </div>
     </section>
 
+    <!-- Topic 12: Tiramisu -->
     <section class="recipe-section">
+        <h2 class="topic-heading">Topic 12: Tiramisu</h2>
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Simmering Chowder"></div>
+                <div class="cooking-animation mix" data-action="Piping-Ladyfingers"></div>
             </div>
             <div class="recipe-content">
-                <h2>New England Clam Chowder</h2>
-                <p><strong>Procedure:</strong> Render 60 g bacon, sweat 100 g onion, 50 g celery, add 25 g flour roux, 400 ml clam juice, 200 g potatoes, finish with 500 ml milk, 50 ml cream.</p>
-                <p><strong>Key Ingredient:</strong> Clams - North America, Native diets - Briny flavor</p>
-                <p><strong>Future Use:</strong> Clam linguine</p>
-                <p><strong>Learning Outcome:</strong> Balanced seafood chowder.</p>
+                <h3>Lady Finger Sponge</h3>
+                <p><strong>Procedure:</strong> Sift 155 g bread flour, 35 g cornstarch. Whip 6 egg whites with 170 g granulated sugar to firm peaks. Whisk 6 egg yolks with 30 g sugar, 3 mL vanilla until light, add 3 mL more vanilla. Fold yolk mixture into whites with hand whisk. Fold in flour mixture gently. Pipe 2-inch ladyfingers on lined trays, sprinkle with sugar. Bake at 375°F (190°C) for 7–8 minutes until golden.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered folding for light ladyfinger sponge.<br>2. Learned piping uniform ladyfingers for consistency.</p>
             </div>
         </div>
-    </section>
-
-    <section class="recipe-section">
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Clarifying Broth"></div>
+                <div class="cooking-animation mix" data-action="Making-Coffee-Syrup"></div>
             </div>
             <div class="recipe-content">
-                <h2>Beef Consommé</h2>
-                <p><strong>Procedure:</strong> Mix 250 g beef, mirepoix, 125 g egg whites, simmer with 2.5 L stock until raft forms, strain, garnish with julienne veggies.</p>
-                <p><strong>Key Ingredient:</strong> Egg Whites - Global, 6,000 BC - Clarification</p>
-                <p><strong>Future Use:</strong> Meringue</p>
-                <p><strong>Learning Outcome:</strong> Clarified consommé.</p>
+                <h3>Coffee Syrup</h3>
+                <p><strong>Procedure:</strong> Combine 130 g granulated sugar, 130 g water in saucepan, heat to just below boiling. Remove from heat, stir in 20 g instant coffee, 10 g Kahlua liqueur, 10 g Marsala. Cool completely before use.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Understood flavor balance in coffee syrup.<br>2. Developed skills in preparing stable soaking syrup.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Topic 5: Salads and Dressings -->
-    <section class="recipe-section">
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Whisking Dressing"></div>
+                <div class="cooking-animation mix" data-action="Whipping-Tiramisu"></div>
             </div>
             <div class="recipe-content">
-                <h2>Caesar Salad Dressing</h2>
-                <p><strong>Procedure:</strong> Whisk 3 egg yolks with 10 ml Dijon, emulsify with 200 ml olive oil, add 10 g anchovies, garlic, Tabasco, Parmesan.</p>
-                <p><strong>Key Ingredient:</strong> Anchovy Fillets - Mediterranean, Roman times - Salty umami</p>
-                <p><strong>Future Use:</strong> Anchovy butter</p>
-                <p><strong>Learning Outcome:</strong> Emulsified dressing.</p>
+                <h3>Tiramisu Filling</h3>
+                <p><strong>Procedure:</strong> Soften 750 g mascarpone with spatula. Whip 6 egg whites with 300 g sugar to medium peaks. Heat 6 egg yolks with 300 g sugar over double boiler to 63°C (145°F), whip until thickened and pale. Gradually add mascarpone to yolks, mix until incorporated. Fold egg whites into mascarpone mixture by hand, whisk then spatula. Refrigerate if runny.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Acquired expertise in stable mascarpone filling.<br>2. Learned folding for light, creamy texture.</p>
             </div>
         </div>
-    </section>
-
-    <section class="recipe-section">
         <div class="recipe-card">
             <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Crisp Pancetta"></div>
+                <div class="cooking-animation mix" data-action="Piping-Meringue-Batons"></div>
             </div>
             <div class="recipe-content">
-                <h2>Garlic Croutons, Pancetta, Lettuce, Parmigiano</h2>
-                <p><strong>Procedure:</strong> Bake garlic-oiled bread cubes, crisp 100 g pancetta, toss with romaine and 40 g shaved Parmesan, dress with Caesar.</p>
-                <p><strong>Key Ingredient:</strong> Pancetta - Italy, Roman times - Fatty crunch</p>
-                <p><strong>Future Use:</strong> Pancetta carbonara</p>
-                <p><strong>Learning Outcome:</strong> Assembled salad components.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Slicing Potatoes"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Potato Salad French Classic</h2>
-                <p><strong>Procedure:</strong> Steam 875 kg waxy potatoes, mix with vinaigrette (65 ml oil, 50 ml vinegar, shallots, garlic, parsley, tarragon), serve warm.</p>
-                <p><strong>Key Ingredient:</strong> Waxy Potatoes - South America, 8,000 BC - Firm texture</p>
-                <p><strong>Future Use:</strong> Potato gratin</p>
-                <p><strong>Learning Outcome:</strong> Balanced vinaigrette.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Roasting Carrots"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Moroccan Carrot and Couscous Salad</h2>
-                <p><strong>Procedure:</strong> Cook 200 g couscous, roast 300 g carrots, mix with chickpeas, peppers, dates, feta, pistachios, dress with lime-cumin vinaigrette.</p>
-                <p><strong>Key Ingredient:</strong> Couscous - North Africa, 13th century - Fluffy base</p>
-                <p><strong>Future Use:</strong> Couscous tabbouleh</p>
-                <p><strong>Learning Outcome:</strong> Composed vibrant salad.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Topic 6: Tea Sandwiches, Canapés, Cheese Plate -->
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Spreading Cream Cheese"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Smoked Salmon & Dill Cream Cheese Wrap</h2>
-                <p><strong>Procedure:</strong> Blend 180 g cream cheese with 2 g dill, spread on 4 tortillas, layer with 6 salmon slices, roll with 30 g seedlings.</p>
-                <p><strong>Key Ingredient:</strong> Smoked Salmon - Northern Europe, Viking era - Smoky richness</p>
-                <p><strong>Future Use:</strong> Salmon tartare</p>
-                <p><strong>Learning Outcome:</strong> Layered wraps.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Blanching Asparagus"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Egg Salad Asparagus and Red Pepper Pinwheel</h2>
-                <p><strong>Procedure:</strong> Mix 6 hard-boiled eggs with mayo, celery, onion, spread on bread with blanched asparagus, grilled red pepper, slice.</p>
-                <p><strong>Key Ingredient:</strong> Asparagus - Mediterranean, 3,000 BC - Crisp freshness</p>
-                <p><strong>Future Use:</strong> Asparagus risotto</p>
-                <p><strong>Learning Outcome:</strong> Assembled pinwheels.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Mixing Tuna"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Italian Tuna Salad</h2>
-                <p><strong>Procedure:</strong> Mix 250 g tuna with 40 g red onion, 30 g celery, sundried tomatoes, capers, olives, egg, mayo, spices, serve on rye.</p>
-                <p><strong>Key Ingredient:</strong> Capers - Mediterranean, ancient Greece - Tangy pop</p>
-                <p><strong>Future Use:</strong> Caper salsa</p>
-                <p><strong>Learning Outcome:</strong> Bold flavor mixing.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Slicing Cucumber"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Cucumber and Cream Cheese</h2>
-                <p><strong>Procedure:</strong> Spread 100 g cream cheese on 6 bread slices, top with 0.5 cucumber slices and 40 g arugula, cut.</p>
-                <p><strong>Key Ingredient:</strong> Cucumber - India, 3,000 BC - Cool crunch</p>
-                <p><strong>Future Use:</strong> Cucumber gazpacho</p>
-                <p><strong>Learning Outcome:</strong> Kept it simple.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Tossing Nuts"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Spiced Nuts</h2>
-                <p><strong>Procedure:</strong> Toss 250 g nuts with whipped egg white, 15 g sugar, 5 g salt, spices, bake at 350°F for 10-15 minutes.</p>
-                <p><strong>Key Ingredient:</strong> Nuts (Assorted) - Global, ancient forage - Spiced crunch</p>
-                <p><strong>Future Use:</strong> Nut brittle</p>
-                <p><strong>Learning Outcome:</strong> Balanced spice mix.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Simmering Chutney"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Pineapple Chutney</h2>
-                <p><strong>Procedure:</strong> Simmer 60 ml vinegar, 25 g sugar, 250 g pineapple, jalapeño, ginger, spices until syrupy, cool.</p>
-                <p><strong>Key Ingredient:</strong> Pineapple - South America, 1493 - Sweet-tart contrast</p>
-                <p><strong>Future Use:</strong> Pineapple salsa</p>
-                <p><strong>Learning Outcome:</strong> Made tangy chutney.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Topic 7: Sandwiches, Panini, Sides -->
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Layering Sandwich"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Club Sandwich</h2>
-                <p><strong>Procedure:</strong> Toast 3 bread slices, layer with mayo, lettuce, tomato, 3 bacon strips, 60 g turkey, cut into triangles.</p>
-                <p><strong>Key Ingredient:</strong> Bacon - Europe, Roman times - Smoky crunch</p>
-                <p><strong>Future Use:</strong> Bacon jam</p>
-                <p><strong>Learning Outcome:</strong> Mastered layering.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Pressing Panini"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Smoked Ham & Taleggio Cheese Panini</h2>
-                <p><strong>Procedure:</strong> Spread lemon mayo on baguette, layer 2 ham slices, tomato, Taleggio, arugula, press until melted.</p>
-                <p><strong>Key Ingredient:</strong> Taleggio Cheese - Italy, 9th century - Creamy melt</p>
-                <p><strong>Future Use:</strong> Taleggio risotto</p>
-                <p><strong>Learning Outcome:</strong> Pressed panini.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Chopping Potatoes"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Oven Roasted Yukon Gold Potatoes with Garlic</h2>
-                <p><strong>Procedure:</strong> Toss 600 g potato wedges with 25 ml oil, thyme, garlic, roast at 375°F for 40-45 minutes, add parsley.</p>
-                <p><strong>Key Ingredient:</strong> Yukon Potatoes - Canada, 20th century - Creamy texture</p>
-                <p><strong>Future Use:</strong> Yukon mash</p>
-                <p><strong>Learning Outcome:</strong> Roasted perfect wedges.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Whisking Vinaigrette"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Balsamic Vinaigrette</h2>
-                <p><strong>Procedure:</strong> Whisk ¼ cup balsamic vinegar, salt, pepper, honey, ½ cup olive oil, 20 g shallots.</p>
-                <p><strong>Key Ingredient:</strong> Balsamic Vinegar - Italy, Middle Ages - Sweet-tart base</p>
-                <p><strong>Future Use:</strong> Balsamic glaze</p>
-                <p><strong>Learning Outcome:</strong> Balanced dressing.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Topic 8: Grilling, Open Face Sandwiches, Compound Butter -->
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Grilling Chicken"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Grilled Chicken Sandwich with Tomato and Avocado</h2>
-                <p><strong>Procedure:</strong> Sear chicken breast, toast bread, spread with avocado-lemon purée, top with tomato, provolone, parsley.</p>
-                <p><strong>Key Ingredient:</strong> Avocado - Central America, 500 BC - Creamy spread</p>
-                <p><strong>Future Use:</strong> Avocado toast</p>
-                <p><strong>Learning Outcome:</strong> Balanced grilling.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Grilling Steak"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Herbed Marinated Grilled NY Striploin</h2>
-                <p><strong>Procedure:</strong> Marinate 8 oz striploin with oil, thyme, rosemary, garlic, grill at 400°F for 4-5 minutes with cross-hatch.</p>
-                <p><strong>Key Ingredient:</strong> NY Striploin - North America, 19th century - Juicy flavor</p>
-                <p><strong>Future Use:</strong> Steak tacos</p>
-                <p><strong>Learning Outcome:</strong> Grilled with precision.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Whisking Aioli"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Sundried Tomato Aioli</h2>
-                <p><strong>Procedure:</strong> Whisk 1 egg yolk with 25 ml vinegar, garlic, emulsify with 150 ml oil, add 20 g sundried tomatoes, basil.</p>
-                <p><strong>Key Ingredient:</strong> Sundried Tomatoes - Mediterranean - Sweet-tart intensity</p>
-                <p><strong>Future Use:</strong> Sundried tomato pesto</p>
-                <p><strong>Learning Outcome:</strong> Made thick aioli.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Shredding Cabbage"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Creamy Coleslaw</h2>
-                <p><strong>Procedure:</strong> Mix 150 g cabbage, 30 g carrot with 50 ml mayo, 20 ml vinegar, 10 g sugar, let sit 30 minutes.</p>
-                <p><strong>Key Ingredient:</strong> Cabbage - Europe, 1,000 BC - Crisp base</p>
-                <p><strong>Future Use:</strong> Cabbage rolls</p>
-                <p><strong>Learning Outcome:</strong> Balanced creamy slaw.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Mixing Butter"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Pink Peppercorn & Tarragon Compound Butter</h2>
-                <p><strong>Procedure:</strong> Sweat shallots, garlic, tarragon in oil, mix with 110 g butter, 5 g pink peppercorns, chill.</p>
-                <p><strong>Key Ingredient:</strong> Pink Peppercorns - South America, 19th century - Fruity spice</p>
-                <p><strong>Future Use:</strong> Peppercorn sauce</p>
-                <p><strong>Learning Outcome:</strong> Crafted compound butter.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Cutting Fries"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>French Fries (Boiling Method)</h2>
-                <p><strong>Procedure:</strong> Boil 2700 g russets, fry at 250°F then 350°F until crisp, season.</p>
-                <p><strong>Key Ingredient:</strong> Russet Potatoes - North America, 19th century - Crispy starch</p>
-                <p><strong>Future Use:</strong> Potato croquettes</p>
-                <p><strong>Learning Outcome:</strong> Three-stage frying.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Topic 9: Poultry Cookery -->
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Stuffing Chicken"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Ballotine of Chicken Leg with Mushroom Stuffing</h2>
-                <p><strong>Procedure:</strong> Debone 4 legs, stuff with mushroom-bread mix, wrap, sear, roast at 400°F to 165°F.</p>
-                <p><strong>Key Ingredient:</strong> White Wine - Mesopotamia, 6,000 BC - Stuffing depth</p>
-                <p><strong>Future Use:</strong> Poached pears</p>
-                <p><strong>Learning Outcome:</strong> Deboned and stuffed.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Mashing Potatoes"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Roasted Garlic Mash Potatoes</h2>
-                <p><strong>Procedure:</strong> Boil 1.25 kg potatoes, mash with 45 g butter, 70 ml cream, roasted garlic, season.</p>
-                <p><strong>Key Ingredient:</strong> Garlic - Central Asia, 3,000 BC - Roasted sweetness</p>
-                <p><strong>Future Use:</strong> Garlic bread</p>
-                <p><strong>Learning Outcome:</strong> Smooth mash.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Toasting Almonds"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Green Beans with Toasted Almonds</h2>
-                <p><strong>Procedure:</strong> Blanch 150 g beans, sauté with 30 g shallots, 40 g almonds in 30 g butter.</p>
-                <p><strong>Key Ingredient:</strong> Almonds - Middle East, 4,000 BC - Nutty crunch</p>
-                <p><strong>Future Use:</strong> Almond cake</p>
-                <p><strong>Learning Outcome:</strong> Balanced veggie side.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Roasting Carrots"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Honey Roasted Heirloom Carrots</h2>
-                <p><strong>Procedure:</strong> Roast 500 g carrots with 30 g honey, thyme, 20 ml oil at 380°F until golden.</p>
-                <p><strong>Key Ingredient:</strong> Honey - Global, 7,000 BC - Sweet glaze</p>
-                <p><strong>Future Use:</strong> Honey glazed pork</p>
-                <p><strong>Learning Outcome:</strong> Roasted with glaze.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Simmering Sauce"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Pan Sauce (Jus Lié)</h2>
-                <p><strong>Procedure:</strong> Brown bones, mirepoix in 10 ml oil, deglaze with 200 ml brown stock, 600 ml chicken stock, thicken with cornstarch, strain.</p>
-                <p><strong>Key Ingredient:</strong> Brown Stock - French cuisine, medieval - Rich base</p>
-                <p><strong>Future Use:</strong> Beef gravy</p>
-                <p><strong>Learning Outcome:</strong> Thickened pan sauce.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Topic 10: Pasta Production -->
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Kneading Dough"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Fresh Egg Pasta Dough</h2>
-                <p><strong>Procedure:</strong> Knead 700 g “00” flour with 7 eggs, 15 ml oil, 10 g salt, rest, roll into sheets.</p>
-                <p><strong>Key Ingredient:</strong> “00” Flour - Italy - Silky dough</p>
-                <p><strong>Future Use:</strong> Pizza dough</p>
-                <p><strong>Learning Outcome:</strong> Rolled perfect pasta.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Filling Ravioli"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Ravioli with Cheese Filling</h2>
-                <p><strong>Procedure:</strong> Fill 500 g pasta with 200 g goat cheese, 200 g ricotta, Parmesan mix, seal, boil 3 minutes, serve with tomato sauce.</p>
-                <p><strong>Key Ingredient:</strong> Ricotta - Italy, Roman times - Creamy filling</p>
-                <p><strong>Future Use:</strong> Ricotta pancakes</p>
-                <p><strong>Learning Outcome:</strong> Stuffed ravioli.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Shaping Gnocchi"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Potato Gnocchi</h2>
-                <p><strong>Procedure:</strong> Bake 675 g russets, mix with 150 g flour, egg, Parmesan, nutmeg, shape, boil until floating.</p>
-                <p><strong>Key Ingredient:</strong> Nutmeg - Indonesia, 6th century - Warm spice</p>
-                <p><strong>Future Use:</strong> Nutmeg custard</p>
-                <p><strong>Learning Outcome:</strong> Shaped light gnocchi.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Simmering Sauce"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Bolognese Sauce</h2>
-                <p><strong>Procedure:</strong> Brown 100 g pork, 100 g veal with garlic, carrot, onion, add 50 ml wine, 600 ml tomato sauce, simmer 1 hour.</p>
-                <p><strong>Key Ingredient:</strong> Ground Veal - Europe - Tender meatiness</p>
-                <p><strong>Future Use:</strong> Veal meatballs</p>
-                <p><strong>Learning Outcome:</strong> Slow-simmered sauce.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Topic 11: Fish Cookery -->
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Searing Salmon"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Pan Seared Salmon</h2>
-                <p><strong>Procedure:</strong> Sear 640 g salmon (4x 160 g) skin-side down in 10 ml oil, cook until medium-rare, serve crisp up.</p>
-                <p><strong>Key Ingredient:</strong> Salmon - North Atlantic/Pacific - Fatty flavor</p>
-                <p><strong>Future Use:</strong> Salmon poke</p>
-                <p><strong>Learning Outcome:</strong> Unilateral cooking.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Puréeing Cauliflower"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Cauliflower Puree</h2>
-                <p><strong>Procedure:</strong> Cook 0.5 head cauliflower, simmer with 80 ml cream, 50 g butter, purée until smooth.</p>
-                <p><strong>Key Ingredient:</strong> Cauliflower - Mediterranean, 6th century BC - Creamy base</p>
-                <p><strong>Future Use:</strong> Cauliflower mash</p>
-                <p><strong>Learning Outcome:</strong> Silky purée.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Blanching Veggies"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Baby Carrots and Peas</h2>
-                <p><strong>Procedure:</strong> Blanch 200 g peas, 200 g carrots, sauté with 60 g shallots, 50 g butter, warm through.</p>
-                <p><strong>Key Ingredient:</strong> Peas - Middle East, 10,000 BC - Sweet pop</p>
-                <p><strong>Future Use:</strong> Pea soup</p>
-                <p><strong>Learning Outcome:</strong> Blanched veggies.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Whisking Butter"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Citrus Beurre Blanc</h2>
-                <p><strong>Procedure:</strong> Reduce 130 ml wine, 70 ml sherry vinegar, 80 g shallots to 20 ml, whisk in 200 g cold butter, season.</p>
-                <p><strong>Key Ingredient:</strong> Sherry Vinegar - Spain, Jerez - Sharp acidity</p>
-                <p><strong>Future Use:</strong> N/A</p>
-                <p><strong>Learning Outcome:</strong> Emulsified beurre blanc.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Dicing Beets"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Yellow Beet Salsa</h2>
-                <p><strong>Procedure:</strong> Mix diced 0.5 yellow beet, chili, 20 g cilantro, shallot, lime zest/juice, 10 g sugar, let sit 30 minutes.</p>
-                <p><strong>Key Ingredient:</strong> Yellow Beet - Europe, 16th century - Sweet crunch</p>
-                <p><strong>Future Use:</strong> Beet salad</p>
-                <p><strong>Learning Outcome:</strong> Balanced fresh salsa.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Topic 12: International Café -->
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation simmer" data-action="Frying Chicken"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Buttermilk Fried Chicken</h2>
-                <p><strong>Procedure:</strong> Marinate 6 legs in 250 ml buttermilk with spices, dredge in flour mix, fry at 350°F to 165°F.</p>
-                <p><strong>Key Ingredient:</strong> Buttermilk - Europe, medieval - Tender tang</p>
-                <p><strong>Future Use:</strong> Buttermilk biscuits</p>
-                <p><strong>Learning Outcome:</strong> Crispy frying.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Mixing Cornmeal"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Skillet Cornbread</h2>
-                <p><strong>Procedure:</strong> Mix 2 cups cornmeal, 1 cup flour, 500 ml buttermilk, eggs, butter, corn, bake at 425°F for 14-16 minutes.</p>
-                <p><strong>Key Ingredient:</strong> Cornmeal - Americas, 5,000 BC - Gritty sweetness</p>
-                <p><strong>Future Use:</strong> Cornmeal pancakes</p>
-                <p><strong>Learning Outcome:</strong> Baked cornbread.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation chop" data-action="Julienning Cabbage"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Red Cabbage Slaw</h2>
-                <p><strong>Procedure:</strong> Julienne 550 g red cabbage, 100 g carrot, 50 g onion, 60 g peppers, coat with vinaigrette.</p>
-                <p><strong>Key Ingredient:</strong> Red Cabbage - Europe, 1,000 BC - Vibrant crunch</p>
-                <p><strong>Future Use:</strong> Braised cabbage</p>
-                <p><strong>Learning Outcome:</strong> Julienned slaw.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Whisking Vinaigrette"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Lemon Poppy Seed Vinaigrette</h2>
-                <p><strong>Procedure:</strong> Blend 1.5 lemons’ juice, 180 ml oil, 1 tbsp poppy seeds, Dijon, honey, emulsify.</p>
-                <p><strong>Key Ingredient:</strong> Poppy Seeds - Mediterranean, 2,500 BC - Nutty texture</p>
-                <p><strong>Future Use:</strong> Poppy seed muffins</p>
-                <p><strong>Learning Outcome:</strong> Zesty dressing.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="recipe-section">
-        <div class="recipe-card">
-            <div class="cooking-container">
-                <div class="cooking-animation mix" data-action="Blending Sauce"></div>
-            </div>
-            <div class="recipe-content">
-                <h2>Avocado Buttermilk Sauce</h2>
-                <p><strong>Procedure:</strong> Blend 1 avocado, lime juice, 100 ml buttermilk, 100 ml sour cream, cilantro, salt, purée.</p>
-                <p><strong>Key Ingredient:</strong> Sour Cream - Eastern Europe - Tangy creaminess</p>
-                <p><strong>Future Use:</strong> Sour cream dip</p>
-                <p><strong>Learning Outcome:</strong> Smooth sauce.</p>
+                <h3>Meringue Batons</h3>
+                <p><strong>Procedure:</strong> Whip 100 g fresh egg whites until frothy. Gradually add 200 g sugar, whip to stiff peaks. Fold in 100 g sifted icing sugar. Pipe meringue into baton shapes on lined tray. Dust with 10 g cocoa powder. Bake at 240°F (115°C) for 40–60 minutes until dry and crisp.</p>
+                <p><strong>Learning Outcomes:</strong><br>1. Mastered hard meringue for crisp decorations.<br>2. Developed precision in piping and dusting.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <h2>A Culinary Adventure</h2>
-        <p>12 Topics, Endless Skills | Presented by Saman Mahmood | April 07, 2025 | Course: CULN 103</p>
+        <h2>A Baking Adventure</h2>
+        <p>12 Topics, Endless Skills | Presented by Saman Mahmood | April 14, 2025 | Course: BAKE 151</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script>
-        // 3D Floating Cooking Utensils Background
+        // 3D Floating Baking Utensils Background
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), alpha: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
 
-        const geometry = new THREE.SphereGeometry(1, 32, 32); // Simple utensil shape placeholder
+        const geometry = new THREE.SphereGeometry(1, 32, 32);
         const material = new THREE.MeshBasicMaterial({ color: 0xFFDAB9, wireframe: true });
         const utensils = [];
         for (let i = 0; i < 10; i++) {
@@ -1000,7 +712,7 @@
             utensils.forEach(u => {
                 u.rotation.x += 0.01;
                 u.rotation.y += 0.01;
-                u.position.y += Math.sin(Date.now() * 0.001 + u.position.x) * 0.05; // Floating effect
+                u.position.y += Math.sin(Date.now() * 0.001 + u.position.x) * 0.05;
             });
             renderer.render(scene, camera);
         }
@@ -1026,7 +738,7 @@
         cookingAnimations.forEach(anim => {
             const action = anim.getAttribute('data-action');
             anim.addEventListener('mouseenter', () => {
-                anim.style.backgroundImage = `url('img/${action.toLowerCase().replace(/\s/g, '-')}.png')`;
+                anim.style.backgroundImage = `url('img/${action.toLowerCase().replace(/ /g, '-')}.png')`;
             });
             anim.addEventListener('mouseleave', () => {
                 anim.style.backgroundImage = '';
